@@ -71,4 +71,25 @@ The structure of the decision tree is exported to a `.dot` file for visualizatio
 Once the model is trained:
 
 ```python
-model.predict([[21, 1]])  # Predicts music preference for a 21-year-old male (assuming 1 represents male)
+model.predict([[21, 1]]) # Predicts music preference for a 21-year-old male (assuming 1 represents male)
+```
+
+
+## 📊 Visualizing the Decision Tree
+
+To convert the `.dot` file (which represents the decision tree structure) to a PNG image, you'll need to have Graphviz installed on your system. If you haven't, you can typically install it via your system's package manager (e.g., `sudo apt-get install graphviz` on Debian/Ubuntu, `brew install graphviz` on macOS, or from the [official Graphviz website](https://graphviz.org/download/) for Windows).
+
+Once Graphviz is installed, navigate to the project directory in your terminal and run:
+
+```bash
+dot -Tpng music-recommender.dot -o tree.png
+```
+
+## 📝 License
+
+This project is licensed under the MIT License. Feel free to use and modify it for learning or your own projects.
+
+## 🙋‍♀️ Author
+
+Sneha Uppula
+GitHub: @snehauppula
